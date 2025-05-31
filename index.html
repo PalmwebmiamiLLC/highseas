@@ -51,7 +51,7 @@
 }
 
 html {
-  scroll-behavior: auto; /* Changed from smooth to prevent issues, ensure this is intended */
+  scroll-behavior: auto; 
   font-size: 14px;
 }
 
@@ -357,7 +357,7 @@ p {
   z-index: 1000;
   transition: all 0.4s ease;
   padding: 1.5rem 0;
-  background-color: rgba(10, 37, 64, 0.95); /* Always show background */
+  background-color: rgba(10, 37, 64, 0.95); 
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(10px);
 }
@@ -382,10 +382,8 @@ p {
 
 .logo span {
   color: var(--accent-light-green);
-  display: block; 
-  font-size: 0.85em; 
+  font-size: 0.9em; 
   font-weight: 600; 
-  line-height: 1.1;
 }
 
 
@@ -407,11 +405,12 @@ p {
   }
   .logo span {
      font-size: 0.8em;
+     display: block; 
   }
 }
 
 .nav-links {
-  display: none; /* Hide on mobile by default */
+  display: none; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -457,7 +456,7 @@ p {
 }
 
 .mobile-menu {
-  display: block; /* Show on mobile */
+  display: block; 
   cursor: pointer;
   z-index: 2;
 }
@@ -518,7 +517,7 @@ p {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px; /* Added to prevent overlap with header */
+  padding-top: 80px; 
 }
 
 .hero-buttons {
@@ -568,7 +567,7 @@ p {
 
 @media (max-width: 768px) {
   .hero-bg {
-    background-attachment: scroll; /* Better performance on mobile */
+    background-attachment: scroll; 
   }
 }
 
@@ -582,12 +581,12 @@ p {
 }
 
 .hero-title {
-  font-size: clamp(1.8rem, 5vw, 3.5rem); /* Responsive font size */
+  font-size: clamp(1.8rem, 5vw, 3.5rem); 
   margin-bottom: 0.8rem;
 }
 
 .hero-subtitle {
-  font-size: clamp(0.9rem, 2vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(0.9rem, 2vw, 1.5rem); 
   margin-bottom: 1.2rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
@@ -2272,7 +2271,7 @@ footer {
                 <div class="loader-wave"></div>
                 <div class="loader-boat"></div>
             </div>
-            <h2>Lake Boca Boat<span class="text-accent">Rentals</span></h2>
+            <h2>High Seas<span class="text-accent">Charters</span></h2>
             <p>Setting sail...</p>
         </div>
     </div>
@@ -2280,5 +2279,751 @@ footer {
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="https://www.lakebocaboatrentals.com/" class="logo">Lake Boca Boat<span>Rentals</span></a>
-                <ul class="nav-link
+                <a href="https://highseascharters.com/" class="logo">High Seas<span>Charters</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#locations">Destinations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+</div>
+    </header><section id="home" class="hero"><div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1521109464564-2fa2faa95858?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGFlcmlhbCUyMGRyb25lJTIwdmlld3xlbnwwfHx8fDE3NDg0MDM1MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')"></div>
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">Experience <span class="gradient-text">Luxury</span> on the Waters of Miami</h1>
+                <p class="hero-subtitle">Premium yacht and boat rentals with professional captains for the ultimate boating experience</p>
+                <div class="hero-buttons">
+                    <a href="#fleet" class="btn btn-large">Explore Our Fleet</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <a href="#fleet" class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section><section id="fleet" class="fleet-section"><div class="container">
+            <h2 class="section-title animate-on-scroll">Explore Our <span class="gradient-text">Luxury Fleet</span>
+</h2>
+            
+            <div class="search-filters animate-on-scroll">
+                <form class="filter-form">
+                    <div class="form-group">
+                        <label for="people">Number of People</label>
+                        <select id="people" class="form-control"><option value="">Any</option>
+<option value="1-6">1-6 People</option>
+<option value="7-12">7-12 People</option>
+<option value="13+">13+ People</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="size">Boat Size</label>
+                        <select id="size" class="form-control"><option value="">Any</option>
+<option value="small">Small (Up to 25ft)</option>
+<option value="medium">Medium (26-40ft)</option>
+<option value="large">Large (41ft+)</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="price">Price Range</label>
+                        <select id="price" class="form-control"><option value="">Any</option>
+<option value="budget">$200-$500/hr</option>
+<option value="premium">$501-$1000/hr</option>
+<option value="luxury">$1001+/hr</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location" class="form-control"><option value="">Any</option>
+<option value="miami">Miami</option>
+<option value="fort-lauderdale">Fort Lauderdale</option>
+<option value="palm-beach">Palm Beach</option>
+<option value="delray-beach">Delray Beach</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <button type="button" class="btn search-btn">Find Your Yacht</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="fleet-grid animate-on-scroll">
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1500627964684-141351970a7f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Yacht" class="fleet-img active"><img src="https://images.unsplash.com/photo-1506630525117-569864448381?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBmbGVldHxlbnwwfHx8fDE3NDg0MDMxNDV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Interior" class="fleet-img"><img src="https://images.unsplash.com/photo-1527588574470-7152d7c3c15e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Deck" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Ocean Explorer Yacht</h3>
+                        <p class="fleet-card-desc">Elegant 55-foot luxury yacht with spacious deck, premium amenities, and stunning views. Perfect for exploring Miami's beautiful coastline in style.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>12 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>650 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>55 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$850<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('ocean-explorer')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBvY2VhbiUyMHNhaWxpbmd8ZW58MHx8fHwxNzQ4NDg0Mjk2fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser" class="fleet-img active"><img src="https://images.unsplash.com/photo-1494961653030-8d1da62c9c98?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBmbGVldHxlbnwwfHx8fDE3NDg0MDMxNDV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser Deck" class="fleet-img"><img src="https://images.unsplash.com/photo-1500627964684-141351970a7f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser Interior" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Coastal Cruiser</h3>
+                        <p class="fleet-card-desc">Sleek 38-foot cruiser with powerful engines, perfect for exploring Miami's coastline. Features modern amenities and comfortable seating for day trips.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>8 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>500 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>38 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$600<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('coastal-cruiser')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1521109464564-2fa2faa95858?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Party Yacht" class="fleet-img active"><img src="https://images.unsplash.com/photo-1521193698642-9810ddf4bff6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Party Yacht Deck" class="fleet-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw1fHxwZW9wbGUlMjBlbmpveWluZyUyMGJlYWNoJTIwcGFydHklMjB5YWNodCUyMGx1eHVyeXxlbnwwfHx8fDE3NDg0NTIzODV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Party Time" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Miami Party Yacht</h3>
+                        <p class="fleet-card-desc">Spacious 65-foot yacht with entertainment system, bar, and plenty of room for socializing. Perfect for celebrations and special events.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>20 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>800 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>65 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$1,200<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('miami-party')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1580422666359-7160890d8c0b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIweWFjaHQlMjBib2F0JTIwc2FpbGluZyUyMG9jZWFufGVufDB8fHx8MTc0ODQ1MjM4OXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Romantic Setting" class="fleet-img active"><img src="https://images.unsplash.com/photo-1541239370886-851049f91487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMHdvbWVufGVufDB8fHx8MTc0ODQwMzE0MXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Sunset Serenity Yacht" class="fleet-img"><img src="https://images.unsplash.com/photo-1481988535861-271139e06469?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMHN1bnNldCUyMGRyb25lfGVufDB8fHx8MTc0ODQwMzUxOXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Sunset Views" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Sunset Serenity</h3>
+                        <p class="fleet-card-desc">Romantic 45-foot yacht perfect for sunset cruises, with premium dining options and panoramic views. Ideal for intimate gatherings and romantic occasions.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>10 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>550 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>45 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$750<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('sunset-serenity')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-container animate-on-scroll">
+                    <div class="about-image-frame">
+                        <img src="https://images.unsplash.com/photo-1527588574470-7152d7c3c15e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Luxury Yacht Experience" class="about-image">
+</div>
+                </div>
+                <div class="about-text-container animate-on-scroll">
+                    <h2 class="section-title-left" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">About <span class="gradient-text">High Seas Charters</span></h2>
+                    <p class="about-text">Welcome to the premier boat rental service in South Florida. We provide luxury yachts and boats with experienced captains to ensure your journey is safe, enjoyable, and unforgettable.</p>
+                    <p class="about-text">With over 10 years of experience in the boating industry, our team is passionate about creating memorable experiences on the water.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Luxury Vessels</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn">Book Your Experience</a>
+                </div>
+            </div>
+        </div>
+    </section><section class="experience-section"><div class="container">
+            <h2 class="section-title">Experience the <span class="gradient-text">Luxury</span>
+</h2>
+            <div class="experience-gallery" id="experience-gallery">
+                <div class="gallery-item large">
+                    <img src="https://pixabay.com/get/g1def4853c92b31ce9adcc6361158554be87e204c070555bc92caea484e780d6f5747683f55e4fcc4acdf8205b3e5327b2f10e3a832c5de6d9038b3f1f0b71df3_640.jpg" alt="Luxury Yacht Experience" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Luxury Yachting</h3>
+                    </div>
+                </div>
+                <div class="gallery-item medium">
+                    <img src="https://pixabay.com/get/g664a799ee2dc80f311de999758e35cd6223c8460d6b979ca5ffd1eeb07f92ffc57c2d5e919b536b9adeefdd7d924b1bf7b1034529784a7147bc6249359be40d4_640.jpg" alt="Yacht Adventure" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Ocean Adventures</h3>
+                    </div>
+                </div>
+                <div class="gallery-item small">
+                    <img src="https://pixabay.com/get/g17c33293fe92e46a8aab2ce7834fae4c6886e5df560a68cf17d8b6d52ec213c118e2ab156eb9852d6cd64615fb6685b21b1156726ecfd196a5469fd83f12fc9e_640.jpg" alt="Yacht Railings" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Luxury Moments</h3>
+                    </div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://pixabay.com/get/gfe9fd6246b1b9e9ed6a1ecf129a8203dde338e6e25ca6e39fa5e885b862de8493b81878898960b14e76dd0cdfe6064269ec4dc45eebbb07bcf591ab6a2f6e567_640.jpg" alt="People Jumping from Yacht" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Beach Fun</h3>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="https://pixabay.com/get/g44fd03d0749b82800ffce92da47a6cea790ba79fbce9c2608165dc935dc7867af14a0039aa2615e7039e79405142ec2e008bd05a153858d9102724c9700be31a_640.jpg" alt="People Running at Beach" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Summer Celebrations</h3>
+                    </div>
+                </div>
+                <div class="gallery-item medium">
+                    <img src="https://pixabay.com/get/ga6d14f87389a60f0470d0a4fb4c2b78eb01800f4b76cce3c3b6f1f154d32e28e59f9410db4cfdd72aacecc8abe0cbeb4_640.jpg" alt="Beach Relaxation" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Coastal Paradise</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section id="locations" class="locations-section"><div class="container">
+            <div class="locations-content">
+                <div class="locations-intro">
+                    <h2 class="section-title">Destinations We <span class="gradient-text">Serve</span>
+</h2>
+                    <p>Explore the stunning coastlines and waterways of South Florida's most beautiful locations. Our expert captains know the best spots for unforgettable experiences.</p>
+                </div>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1562768914-009c426fe832?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxtaWFtaSUyMGJlYWNoJTIweWFjaHQlMjBsdXh1cnl8ZW58MHx8fHwxNzQ4NDkwNTAxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Miami Beach</h3>
+                            <p class="location-desc">Experience the vibrant culture and crystal waters of Miami's iconic beaches. Cruise along the famous skyline and discover secluded spots only accessible by boat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1503756234508-e32369269deb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Fort Lauderdale" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Fort Lauderdale</h3>
+                            <p class="location-desc">Known as the "Venice of America" with its intricate canal system. Navigate through waterfront mansions and enjoy the beautiful coastal scenery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Palm Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Palm Beach</h3>
+                            <p class="location-desc">Elegant coastal town known for its upscale living and beautiful shorelines. Discover pristine beaches and enjoy the luxurious atmosphere.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Delray Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Delray Beach</h3>
+                            <p class="location-desc">Charming coastal community with a perfect blend of small-town atmosphere and sophisticated amenities. Explore hidden coves and serene waters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section class="testimonials-section"><div class="container">
+            <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span>
+</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Sarah M." class="author-img"><div class="author-details">
+                                <h4 class="author-name">Sarah M.</h4>
+                                <p class="author-location">Miami, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">Absolutely incredible experience with High Seas Charters! The yacht was immaculate, and the captain was professional and knowledgeable. We had the most amazing day cruising around Miami Beach. Will definitely rent again!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John D." class="author-img"><div class="author-details">
+                                <h4 class="author-name">John D.</h4>
+                                <p class="author-location">Fort Lauderdale, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">Our corporate event on the Miami Party Yacht from High Seas Charters was a huge success! The boat was spacious, the amenities were top-notch, and the captain made sure everyone had a great time. Highly recommend for any special occasion!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Lisa R." class="author-img"><div class="author-details">
+                                <h4 class="author-name">Lisa R.</h4>
+                                <p class="author-location">Palm Beach, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">We celebrated our anniversary on the Coastal Cruiser with High Seas Charters, and it was magical! The sunset views were breathtaking, and the captain took us to some secluded spots that we would never have found on our own. A memory we'll cherish forever.</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-navigation">
+                    <button class="testimonial-nav-btn prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonial-nav-btn next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section><section class="why-section"><div class="container">
+            <h2 class="section-title" style="color: white !important;">Why <span class="gradient-text">Choose Us</span>
+</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="why-title">Premium Fleet</h3>
+                    <p class="why-text">Our fleet consists of only the finest luxury yachts, meticulously maintained and equipped with premium amenities for an unforgettable experience.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="why-title">Professional Crew</h3>
+                    <p class="why-text">Our captains and crew are highly trained professionals with extensive experience and local knowledge to ensure your safety and enjoyment.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="why-title">Exclusive Destinations</h3>
+                    <p class="why-text">Access secluded coves, pristine beaches, and hidden spots only reachable by boat, guided by our captains who know the best local secrets.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="why-title">Personalized Service</h3>
+                    <p class="why-text">We customize each charter to meet your specific needs and preferences, whether it's a romantic sunset cruise or a lively celebration with friends.</p>
+                </div>
+            </div>
+        </div>
+    </section><section id="faq" class="faq-section"><div class="container">
+            <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span>
+</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need boating experience to rent a yacht?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, all of our yacht rentals come with a professional captain and crew. You don't need any boating experience to enjoy a luxury yacht charter with us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's included in the rental price?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our rental prices include the yacht, professional captain, crew, fuel for standard cruising, water toys (varies by yacht), and standard amenities. Food, beverages, and special requests are typically additional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for regular days and 4-6 weeks for holidays and peak season dates. However, we can sometimes accommodate last-minute bookings depending on availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens in case of bad weather?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If severe weather conditions prevent safe boating, we'll work with you to reschedule your charter at no additional cost. Our captains make the final safety decisions regarding weather conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I bring my own food and drinks?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you're welcome to bring your own food and beverages. We can also arrange catering services or recommend local options if you prefer. Some of our yachts have cooking facilities and refrigeration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.5rem);">Get in <span class="gradient-text">Touch</span></h2>
+            
+            <div class="contact-grid">
+  <div class="contact-info-box">
+    <h3>Get in Touch</h3>
+    <p>Have questions about our services? Contact us today and our team will get back to you as soon as possible.</p>
+    
+    <div class="contact-details">
+      <div class="contact-detail-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Location</h4>
+          <p>123 Marina Way, Fort Lauderdale, FL 33316</p>
+        </div>
+      </div>
+      
+      <div class="contact-detail-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>(305) 555-1234</p>
+        </div>
+      </div>
+      
+      <div class="contact-detail-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>info@highseascharters.com</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-hours">
+      <h4>Hours of Operation</h4>
+      <p>Monday - Sunday: 8:00 AM - 8:00 PM</p>
+    </div>
+  </div>
+  
+  <div class="contact-form-box">
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" class="form-control" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-block">Send Message</button>
+    </form>
+  </div>
+</div></div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">High Seas<span>Charters</span></div>
+                    <p>High Seas Charters - Luxury yacht experiences with over 500+ Happy Customers. Book with us today and make this a sensational experience!</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#locations">Destinations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (305) 555-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@highseascharters.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Fort Lauderdale Marina, 555 Seabreeze Blvd, Fort Lauderdale, FL 33316</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input"><button class="btn newsletter-btn"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 High Seas Charters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer><script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            // Mobile menu toggle
+            if (mobileMenu && navLinks) {
+                mobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Adjusted for header height
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mobileMenu && navLinks) {
+                            mobileMenu.classList.remove('active');
+                            navLinks.classList.remove('active');
+                        }
+                    }
+                });
+            });
+            
+            // Loading Animation
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('hidden');
+                }, 1500); // Hide after 1.5 seconds
+            }
+            
+            // Image Slider for Fleet Cards
+            document.querySelectorAll('.fleet-card').forEach(card => {
+                const images = card.querySelectorAll('.fleet-img');
+                const prevBtn = card.querySelector('.prev-arrow');
+                const nextBtn = card.querySelector('.next-arrow');
+                const counter = card.querySelector('.slider-counter');
+                let currentIndex = 0;
+                
+                // Skip if no images or controls
+                if (!images.length || !prevBtn || !nextBtn || !counter) return;
+                
+                // Update counter
+                const updateCounter = () => {
+                    counter.textContent = `${currentIndex + 1}/${images.length}`;
+                };
+                
+                // Show current image
+                const showImage = (index) => {
+                    images.forEach(img => img.classList.remove('active'));
+                    images[index].classList.add('active');
+                    updateCounter();
+                };
+                
+                // Next image
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                });
+                
+                // Previous image
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                });
+                
+                // Initialize
+                showImage(currentIndex);
+            });
+            
+            // Testimonial Slider
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            const prevTestimonialBtn = document.querySelector('.prev-testimonial');
+            const nextTestimonialBtn = document.querySelector('.next-testimonial');
+            
+            if (testimonials.length && prevTestimonialBtn && nextTestimonialBtn) {
+                let currentTestimonial = 0;
+                
+                // Show current testimonial
+                const showTestimonial = (index) => {
+                    testimonials.forEach(item => item.classList.remove('active'));
+                    testimonials[index].classList.add('active');
+                };
+                
+                // Next testimonial
+                nextTestimonialBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+                
+                // Previous testimonial
+                prevTestimonialBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+                
+                // Auto rotate testimonials - This was previously in the code, keeping it.
+                setInterval(() => {
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                }, 8000);
+            }
+            
+            // Availability Calendar Function
+            window.showCalendar = function(boatId) {
+                alert(`Calendar will open for ${boatId}. This feature is coming soon!`);
+            };
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            if (faqItems.length) {
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    
+                    question.addEventListener('click', () => {
+                        // Close all other items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item && otherItem.classList.contains('active')) {
+                                otherItem.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        item.classList.toggle('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
